@@ -1,5 +1,5 @@
 const amazonAffiliateLink =
-  "PASTE-YOUR-AMAZON-AFFILIATE-LINK-HERE";
+  "https://link.amazon/B0bKKs86e";
 
 
 function goToAmazon() {
