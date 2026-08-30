@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.landing {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.75)
+    ),
+    url("background.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 520px;
+
+  padding: 45px 35px;
+
+  text-align: center;
+
+  background: rgba(20,20,20,0.78);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 25px;
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,0.6);
+}
+
+.badge {
+  display: inline-block;
+
+  padding: 8px 15px;
+
+  margin-bottom: 22px;
+
+  border-radius: 50px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #d8b56a;
+
+  border: 1px solid rgba(216,181,106,0.4);
+}
+
+h1 {
+  font-size: 38px;
+
+  line-height: 1.15;
+
+  margin-bottom: 18px;
+
+  letter-spacing: -1px;
+}
+
+p {
+  color: #c8c8c8;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.yes-btn {
+  width: 100%;
+
+  padding: 17px 20px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #e8c477,
+    #b88932
+  );
+
+  color: #111;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.yes-btn span {
+  margin-left: 8px;
+
+  font-size: 20px;
+}
+
+.yes-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 30px rgba(216,181,106,0.3);
+}
+
+.no-btn {
+  padding: 13px;
+
+  background: transparent;
+
+  border: none;
+
+  color: #999;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.no-btn:hover {
+  color: white;
+}
+
+.secure {
+  margin-top: 25px;
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+  .card {
+    padding: 35px 22px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}
